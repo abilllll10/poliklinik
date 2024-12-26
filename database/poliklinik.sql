@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 13, 2024 at 07:17 AM
+-- Generation Time: Dec 26, 2024 at 12:32 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.1.25
 
@@ -68,10 +68,7 @@ CREATE TABLE `dokter` (
 --
 
 INSERT INTO `dokter` (`id`, `nama`, `password`, `alamat`, `no_hp`, `id_poli`) VALUES
-(27, 'Abil', '827ccb0eea8a706c4c34a16891f84e7b', 'JL JANO 1', '27272727', 10),
-(28, 'Sapto', '827ccb0eea8a706c4c34a16891f84e7b', 'Jl.Kemuning', '089888', 21),
-(29, 'Tijjani', '827ccb0eea8a706c4c34a16891f84e7b', 'Jl.Milan Utara', '36363636', 11),
-(30, 'Kiki', '827ccb0eea8a706c4c34a16891f84e7b', 'kendari', '98278399', 10);
+(38, 'Michael', '24d545382bf132265c7bcb71acddbae0', 'bali', '12334', 10);
 
 -- --------------------------------------------------------
 
@@ -137,7 +134,6 @@ CREATE TABLE `pasien` (
 
 INSERT INTO `pasien` (`id`, `nama`, `password`, `alamat`, `no_ktp`, `no_hp`, `no_rm`) VALUES
 (17, 'Gus Idris', '827ccb0eea8a706c4c34a16891f84e7b', 'Jl.Gambir Selatan', '77777', '0853393930', '202412-006'),
-(19, 'Michael', '827ccb0eea8a706c4c34a16891f84e7b', 'Gang baru', '2929', '29292929', '202412-007'),
 (21, 'Gugu', '827ccb0eea8a706c4c34a16891f84e7b', 'hhhhh', '788789', '899777', '202412-008'),
 (22, 'Ilham', '827ccb0eea8a706c4c34a16891f84e7b', 'yyyyy', '11111', '7677', '202412-009'),
 (23, 'Kano', '827ccb0eea8a706c4c34a16891f84e7b', 'jl Mawar', '889998899', '0889999', '202412-010'),
@@ -259,13 +255,13 @@ ALTER TABLE `detail_periksa`
 -- AUTO_INCREMENT for table `dokter`
 --
 ALTER TABLE `dokter`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
 
 --
 -- AUTO_INCREMENT for table `jadwal_periksa`
 --
 ALTER TABLE `jadwal_periksa`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- AUTO_INCREMENT for table `obat`
