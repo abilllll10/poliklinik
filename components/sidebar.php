@@ -87,6 +87,12 @@
                             </a>
                         </li>
                         <li class="nav-item">
+                            <a href="profile_dokter.php" class="nav-link">
+                                <i class="fas fa-solid fa-user nav-icon"></i>
+                                <p>Profile<span class="right badge badge-success">Dokter</span></p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
                             <a href="jadwalPeriksa.php" class="nav-link">
                                 <i class="fas fa-solid fa-hospital-user nav-icon"></i>
                                 <p>Jadwal Praktek Dokter <span class="right badge badge-success">Dokter</span></p>
