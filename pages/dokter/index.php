@@ -48,11 +48,7 @@
                                                     <input type="text" class="form-control" id="nama_dokter" name="nama"
                                                         required>
                                                 </div>
-                                                <div class="form-group">
-                                                    <label for="password">Password</label>
-                                                    <input type="text" class="form-control" id="password" name="password"
-                                                        required>
-                                                </div>
+                    
                                                 <div class="form-group">
                                                     <label for="alamat">Alamat</label>
                                                     <textarea class="form-control" rows="3" placeholder="Enter ..."
