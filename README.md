@@ -11,13 +11,6 @@ password    : admin123
 # Login dokter
 ```
 username    : nama dokter
-password    : password
-
-```
-
-# Contoh Untuk Login Dokter
-```
-username    : Abil
-password    : 12345
+password    : alamat
 
 ```
