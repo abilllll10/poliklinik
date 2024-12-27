@@ -1,6 +1,14 @@
 # Muhammad Nabil Aisy
 # A11.2021.13302
 
+# Cara penginstalan
+```
+1.Download file di github terlebih dahulu
+2.Ekstrak file yang telah di Download (letakkan file di htdocs)
+3.Import database selanjutnya sesuaikan dengan nama file sql nya
+4.Jalankan program web di browser seperti localhost/nama file nya
+```
+
 # Login admin 
 untuk login admin melalui halaman login dokter
 ```
