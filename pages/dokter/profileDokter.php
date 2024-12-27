@@ -43,8 +43,6 @@
                                     <th>Nama Dokter</th>
                                     <th>Alamat</th>
                                     <th>No HP</th>
-                                    <th>Poli</th>
-                                
                                 </tr>
                             </thead>
                             <tbody>
@@ -54,7 +52,7 @@
 
                             $id = $_SESSION['id'];
                             
-                            $query = "SELECT dokter.id, dokter.nama, dokter.alamat, dokter.no_hp, poli.nama_poli, dokter.password FROM dokter INNER JOIN poli ON dokter.id_poli = poli.id WHERE dokter.id = '$id'" ;
+                            $query =  $query = "SELECT dokter.id, dokter.nama, dokter.alamat, dokter.no_hp FROM dokter WHERE id = '$id_dokter'";
                             $result = mysqli_query($mysqli, $query);
 
                             while ($data = mysqli_fetch_assoc($result)) { 
@@ -63,7 +61,7 @@
                                     <td><?php echo $data['nama'] ?></td>
                                     <td style="white-space: pre-line;"><?php echo $data['alamat'] ?></td>
                                     <td><?php echo $data['no_hp'] ?></td>
-                                    <td><?php echo $data['nama_poli'] ?></td>
+                                    
                                     
                                     <td>
                                         <button type='button' class='btn btn-sm btn-primary edit-btn'
@@ -104,21 +102,7 @@
                                                                 name="no_hp" value="<?php echo $data['no_hp'] ?>"
                                                                 required>
                                                         </div>
-                                                        <div class="form-group">
-                                                            <label for="poli">Poli</label>
-                                                            <select class="form-control" id="poli" name="poli">
-                                                                <?php
-                                                                require 'config/koneksi.php';
-                                                                $query = "SELECT * FROM poli";
-                                                                $results  = mysqli_query($mysqli,$query);
-                                                                while ($dataPoli = mysqli_fetch_assoc($results)) {
-                                                                    $selected = $dataPoli['id']
-                                                                ?>
-                                                                <option value="<?php echo $dataPoli['id'] ?>">
-                                                                    <?php echo $dataPoli['nama_poli'] ?></option>
-                                                                <?php } ?>
-                                                            </select>
-                                                        </div>
+                                                        
                                                         
                                                         <button type="submit" class="btn btn-success">Simpan</button>
                                                     </form>

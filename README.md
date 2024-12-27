@@ -14,3 +14,16 @@ username    : nama dokter
 password    : alamat
 
 ```
+
+# Login pasien 
+```
+username    : nama pasien
+password    : password
+
+```
+
+# catatan
+```
+Untuk biaya hasil total itu untuk biaya periksa awal sebesar 150.000 ribu
+
+```
